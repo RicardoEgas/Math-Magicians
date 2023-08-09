@@ -1,0 +1,31 @@
+.calculator {
+  width: 20%;
+  margin: 10rem auto;
+  text-align: center;
+  border: 1px solid rgba(118, 115, 115, 0.319);
+  display: grid;
+  background-color: rgb(231, 227, 227);
+}
+
+.result {
+  text-align: end;
+  grid-column: 1/5;
+  color: white;
+  background-color: gray;
+  padding: 0.8rem;
+}
+
+.btn {
+    border: 1px solid rgb(214, 212, 212);
+    padding: 1rem;
+    font-weight: 500;
+  }
+  
+  .orange {
+    background-color: orange;
+    border-top: 1px solid white;
+  }
+  
+  .zero {
+    grid-column: 1/3;
+  }
