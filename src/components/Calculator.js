@@ -13,10 +13,15 @@ const Calc = () => {
     setMath(calculate(math, value));
   };
   return (
-    <div className="calculator">
-      <div className="result">{next || total || operation || 0 }</div>
-      {numbers.map((number) => <Buttons number={number} key={number} handleEvent={handleEvent} />)}
-    </div>
+    <>
+      <h2 className="math-header">Lets do some math</h2>
+      <div className="calculator">
+        <div className="result">{next || total || operation || 0 }</div>
+        {/* eslint-disable max-len */}
+        {numbers.map((number) => <Buttons number={number} key={number} handleEvent={handleEvent} />)}
+        {/* eslint-disable max-len */}
+      </div>
+    </>
   );
 };
 

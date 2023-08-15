@@ -44,3 +44,31 @@
   font-weight: 700;
   padding: 1rem;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 2rem;
+}
+
+.home-container {
+  margin: 2rem;
+}
+
+.logo {
+  margin: 2rem;
+  font-size: 30px;
+}
+
+.math-header {
+  margin-left: 2rem;
+}
