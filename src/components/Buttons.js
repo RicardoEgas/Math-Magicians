@@ -12,7 +12,7 @@ const Buttons = ({ number, handleEvent }) => {
 };
 
 Buttons.propTypes = {
-  number: PropTypes.number.isRequired,
+  number: PropTypes.string.isRequired,
   handleEvent: PropTypes.func.isRequired,
 };
 
