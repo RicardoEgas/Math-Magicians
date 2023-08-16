@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons component should render with the provided number and handle event 1`] = `
+<div
+  className="btn"
+  onClick={[MockFunction]}
+  onKeyDown={[MockFunction]}
+  role="presentation"
+>
+  1
+</div>
+`;
