@@ -21,8 +21,19 @@ describe('test operations', () => {
     expect(result).toBe('3');
   });
 
-  test('testing module', () => {
+  test('testing modulo', () => {
     const result = operate(9, 3, '%');
     expect(result).toBe('0');
+  });
+  test('testing division by zero', () => {
+    const result = operate(9, 0, '÷');
+    expect(result).toBe("Can't divide by 0.")
+  });
+  test('testing modulo by zero', () => {
+    const result = operate(9, 0, '%');
+    expect(result).toBe("Can't find modulo as can't divide by 0.")
+  });
+  it('For Unknown Operation', () => {
+    expect(() => operate(3, 4, '#')).toThrowError("Unknown operation '#'");
   });
 });
