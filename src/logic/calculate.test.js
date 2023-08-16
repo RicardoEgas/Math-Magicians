@@ -1,4 +1,4 @@
-import calculate from "./calculate";
+import calculate from './calculate';
 
 describe('calculate data', () => {
   test('test if AC is pressed', () => {
@@ -33,11 +33,11 @@ describe('calculate data', () => {
     const result = calculate({ total: '2', next: '5', operation: '+' }, '+/-');
     expect(result).toEqual({ total: '2', next: '-5', operation: '+' });
   });
-  test("save the final operation", () => {
+  test('save the final operation', () => {
     const result = calculate({ total: '2', next: null, operation: '+' }, 'x');
     expect(result).toEqual({ total: '2', next: null, operation: 'x' });
   });
-  test("save operation", () => {
+  test('save operation', () => {
     const result = calculate({ total: '2', next: null, operation: null }, 'x');
     expect(result).toEqual({ total: '2', next: null, operation: 'x' });
   });
