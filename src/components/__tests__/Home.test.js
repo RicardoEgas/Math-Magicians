@@ -1,12 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from "@testing-library/react";
 import Home from '../Home';
 
 describe('Home component', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Home />)
-      .toJSON();
+    const { tree } = render(<Home />)
     expect(tree).toMatchSnapshot();
   });
 });

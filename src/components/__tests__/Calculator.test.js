@@ -1,12 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Calc from '../Calculator';
+import { render } from '@testing-library/react';
+import Calc from "../Calculator";
 
-describe('Home component', () => {
+describe('Calculator component', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(<Calc />)
-      .toJSON();
+    const { tree } = render(<Calc />);
     expect(tree).toMatchSnapshot();
   });
 });

@@ -1,17 +1,15 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from "@testing-library/react";
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from '../Navbar';
 
 describe('Navbar component', () => {
   it('renders correctly', () => {
-    const tree = renderer
-      .create(
+    const { tree } = render(
         <BrowserRouter>
           <Navbar />
         </BrowserRouter>,
-      )
-      .toJSON();
+      );
     expect(tree).toMatchSnapshot();
   });
 });
