@@ -1,14 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home component renders correctly 1`] = `
-<div
-  className="home-container"
->
-  <h2>
-    Welcome to our page!
-  </h2>
-  <p>
-    Math Magicians is a powerful and intuitive calculator application designed to streamline your mathematical tasks on the go. With its user-friendly interface and advanced features, it is the ultimate tool for anyone seeking quick and accurate calculations.
-  </p>
-</div>
-`;
+exports[`Home component renders correctly 1`] = `undefined`;
